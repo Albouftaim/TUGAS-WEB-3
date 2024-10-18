@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+
+<div class="container">
+        <form method="post" action="tugas_hasil.html">  
+             <h2>WELCOME TO <a bisque; href="https://www.aeon.co.id/">AEON.NF</a></h2>
+             <div class="form-group">
+
+                <label for="a">Upload Picture:</label>
+                <img src="apple.webp" width="200">
+                <input type="file" id="upload-picture" name="upload-picture">
+             </div>
+    <div class="form-group">
+        <label for="title">Title Here:</label>
+        <input type="text" id="title" name="title" value="MacBook Air Pro">
+    </div>
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <br>
+        <textarea id="description" name="description" rows="13" cols="50">
+Year:2025
+
+Model:13-inch MacBook Air Pro
+
+Ram:16 GB
+
+Display:15.4-inch
+
+Storage:1 Tera GB
+
+Condition: GACORR
+        </textarea>
+    </div>
+    <div class="form-group">
+        <label for="account-number">Account Number:</label>
+        <input type="text" id="account-number"name="account-number">
+    </div>
+
+    <div class="form-group">
+        <label for="bank">Bank:</label>
+        <select id="bank" name="bank">
+            <option value="HSBC">HSBC</option>
+             <!-- Add other bank options as needed -->
+             <option value="BCA">BCA</option>
+             <option value="DANA">DANA</option>
+             <option value="BSI">BSI</option>
+             <option value="BNI">BNI</option>
+             <option value="MANDIRI">MANDIRI</option>
+             <option value="GOPAY">GOPAY</option>
+             <option value="CIMB NIAGA">CIMB NIAGA</option>  
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="account-holder">Account Holder:</label>
+        <input type="text" id="account-holder" name="account-holder" placeholder="Name Here">
+    </div>
+
+    <div class="form-group">
+        <label for="transaction">Transaction:</label>
+        <input type="number" id="transaction" name="transaction" value="1" min="1" max="100">
+        <p class="small-text">* if the transaction is for 3 person, choose 3 from the drop-down list</p>
+    </div>
+
+    <div class="form-group">
+        <label>Send to:</label>
+        <input type="checkbox" id="send-mobile" name="send-mobile">
+        <label for="send-mobile">Send to Mobile Phone</label><br>
+        <input type="checkbox" id="send-email" name="send-email">
+        <label for="send-email">Send to Email</label>
+    </div>
+
+    <div class="form-group">
+        <label for="mobile-number">Send to Mobile Phone:</label>
+        <input type="text" id="mobile-number" name="mobile-number">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Send to Email:</label>
+        <input type="text" id="email" name="email">
+    </div>
+
+    <button class="btn" type="submit">Generate Nabr Link</button>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto; 
+            padding: 100px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom:15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input[type="text"], .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group input[type="file"] {
+            margin-top: 10px;
+        }
+        .form-group .small-text {
+            font-size: 12px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: rgb(19, 160, 6);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: rgba(10, 171, 10, 0.792);
+        }
+    </style>
+</div>
+
+</body>
+</html>
